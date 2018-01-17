@@ -40,7 +40,7 @@ df_DATACSV = df_DATACSV.dropna(how='all', axis=1)
 #Drop observations that contain a string: Basically create a new DataFrame
 #That doesn't contain raws wich had the value 'V1REP'
 
-df_DATACSV[df_DATACSV.Visit != 'V1REP'] #Visit is the column (as python method), V1REP is the value
+df_DATACSV = df_DATACSV[df_DATACSV.Visit != 'V1REP'] #Visit is the column (as python method), V1REP is the value
 
 # Specify file path to save DataFrame as csv
 
